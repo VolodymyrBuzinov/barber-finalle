@@ -1,0 +1,209 @@
+.come-here {
+  @media screen and (max-width: 767px) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 121px;
+    padding-bottom: 130px;
+  }
+}
+.come-here-position {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1280px;
+  }
+}
+.text {
+  max-width: 500px;
+  text-align: left;
+
+  .text-before {
+    position: relative;
+    text-transform: uppercase;
+    color: $main-color;
+    padding-left: 111px;
+    margin-bottom: 20px;
+
+    &::before {
+      // background-image: url(../images/icons/defis.svg);
+      position: absolute;
+      left: 0;
+      top: 7px;
+      content: '';
+      width: 60px;
+      border: 1px solid $main-color;
+      color: $main-color;
+    }
+  }
+  .text-title {
+    @extend %font-raleway;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+  }
+  .text-paragraph {
+    text-align: left;
+    @extend %font-sans;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #555555;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1280px) {
+    order: 2;
+    margin-bottom: 0em;
+    padding-top: 35px;
+  }
+}
+
+// оформляем раздел с блоками
+.plus {
+  display: flex;
+
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    width: 80%;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 130px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .plus-group-one {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-left: 0;
+
+    @media screen and (min-width: 480px) {
+      margin-right: 0;
+    }
+  }
+  .plus-group-two {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-left: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (max-width: 420px) {
+      padding-top: 0;
+      margin-left: 0;
+    }
+    @media screen and (min-width: 420px) {
+      padding-top: 35px;
+    }
+    @media screen and (min-width: 480px) {
+      padding-top: 35px;
+    }
+    &:nth-child(even) {
+      margin-bottom: 0;
+    }
+  }
+
+  .item-container {
+    padding: 20px 35px;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin: 15px 0px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    :nth-child(n + 1) {
+      margin-right: 0;
+    }
+    @media screen and (max-width: 419px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: 320px) {
+      max-width: 193px;
+    }
+    @media screen and (min-width: 768px) {
+      min-width: 210px;
+    }
+    @media screen and (min-width: 1280px) {
+      min-width: 170px;
+    }
+  }
+  .item-paragraph {
+    @extend %font-sans;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+  }
+  .item-cyfra {
+    @extend %font-sans;
+    color: $main-color;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+  .sup {
+    font-size: 16px;
+    color: $hover-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    .plus-group-two {
+      max-width: 210px;
+      // margin: 15px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .plus {
+      order: 1;
+    }
+    .plus-group-one {
+      min-width: 170px;
+    }
+    .plus-group-two {
+      min-width: 170px;
+    }
+    .item-container {
+      padding: 20px 24px;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 170px;
+    }
+  }
+}
