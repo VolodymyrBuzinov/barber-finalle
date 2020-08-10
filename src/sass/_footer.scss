@@ -227,7 +227,7 @@
 
   padding-top: 84px;
   padding-bottom: 84px;
-  height: 496px;
+  height: 100%;
   background: url('../../src/images/footer-images/contacts.jpg')
     rgba(17, 19, 25, 0.9);
   background-blend-mode: color-burn;
@@ -272,7 +272,6 @@
     padding-bottom: 130px;
     padding-left: 100px;
     padding-right: 100px;
-    height: 644px;
     background: url('../../src/images/footer-images/contacts-desktop.jpg')
       rgba(17, 19, 25, 0.9);
     background-blend-mode: color-burn;
@@ -298,6 +297,7 @@
 
 .list-address {
   list-style: none;
+  @extend %text-throw;
   margin-bottom: 44px;
   padding-left: 0;
 
@@ -343,6 +343,7 @@
   line-height: 1.36;
   display: flex;
   align-items: center;
+  @extend %text-throw;
 
   &::before {
     position: absolute;
@@ -374,6 +375,7 @@
   line-height: 1.67;
   color: $little-text-color;
   display: block;
+  @extend %text-throw;
 }
 .flex-container {
   display: flex;

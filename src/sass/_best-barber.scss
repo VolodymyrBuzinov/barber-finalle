@@ -27,12 +27,12 @@
     @extend %font-sans;
     color: $main-color;
     padding-left: 80px;
-    padding-bottom: 20px;
-
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     position: relative;
+    @extend %text-throw;
+    margin-bottom: 20px;
 
     &::before {
       position: absolute;
@@ -49,11 +49,11 @@
   &-title {
     @extend %font-raleway;
     color: $main-color;
-    padding-bottom: 20px;
-
+    @extend %text-throw;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
+    margin-bottom: 20px;
 
     @media screen and (min-width: 1280px) {
       font-size: 42px;
@@ -64,8 +64,8 @@
   &-text {
     @extend %font-sans;
     color: #555555;
-    padding-bottom: 20px;
-
+    @extend %text-throw;
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.62;
@@ -79,8 +79,8 @@
   &-paragraf {
     @extend %font-sans;
     color: #555555;
-    padding-bottom: 40px;
-
+    @extend %text-throw;
+    margin-bottom: 40px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.62;

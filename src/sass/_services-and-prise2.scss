@@ -74,6 +74,7 @@
 
 .line-meta-prise {
   display: flex;
+  align-items: center;
   margin-bottom: 20px;
 }
 .prise-line {
@@ -82,7 +83,6 @@
 
   background: rgba(157, 164, 189, 0.6);
   margin-right: 20px;
-  margin-top: 7px;
 }
 .block-prise {
   display: inline-block;
@@ -117,6 +117,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  @extend %text-throw;
 }
 
 .name-section-prise {
@@ -129,7 +130,7 @@
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: #ffffff;
-
+  @extend %text-throw;
   margin-bottom: 44px;
 }
 .menu-services-prise {
@@ -172,6 +173,7 @@
 .services-prise-two,
 .services-prise-one {
   padding-left: 0;
+  @extend %list-throw;
 }
 .services-prise-two .item-prise:last-child {
   margin-bottom: 0px;
