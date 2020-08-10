@@ -1,13 +1,15 @@
 .portfolio-conteiner {
-  padding: 0px;
   @media screen and (max-width: 767px) {
-    margin: 84px 31px;
+    padding-top: 84px;
+    padding-bottom: 84px;
   }
   @media screen and (min-width: 768px) {
-    margin: 100px 39px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   @media screen and (min-width: 1280px) {
-    margin: 130px 55px;
+    padding-top: 130px;
+    padding-bottom: 130px;
   }
 }
 ul {
