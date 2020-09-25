@@ -77,13 +77,25 @@
   width: 100%;
   margin-bottom: 30px;
 }
-
+.par-text__pos {
+  margin-bottom: 44px;
+  padding-left: 25px;
+  @media screen and(max-width: 467px) {
+    padding-left: 0;
+  }
+  @media screen and(min-width: 768px) {
+    padding-left: 127px;
+  }
+  @media screen and(min-width: 1280px) {
+    padding-left: 25px;
+  }
+}
 .masters-paragraph {
   position: relative;
   // text-align: center;
   font-weight: 600px;
   font-size: 11px;
-  line-height: 1, 36;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   color: $main-color;
   margin-bottom: 20px;
@@ -93,7 +105,7 @@
   &::before {
     position: absolute;
     left: 0;
-    top: 7px;
+    top: 50%;
     content: '';
     width: 60px;
     border: 1px solid $main-color;
@@ -107,7 +119,6 @@
   line-height: 1.16;
   letter-spacing: 0.05em;
   @extend %text-throw;
-  margin-bottom: 44px;
 }
 
 .master-name {

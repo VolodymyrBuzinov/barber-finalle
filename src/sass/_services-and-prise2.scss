@@ -85,23 +85,14 @@
   margin-right: 20px;
 }
 .block-prise {
-  display: inline-block;
   list-style-type: none;
   padding: 30px;
   margin-bottom: 50px;
-
   background-image: linear-gradient(
     180deg,
     #171a24 0%,
     rgba(23, 26, 36, 0.2) 100%
   );
-
-  @media screen and (max-width: 479px) {
-    max-width: 479px;
-  }
-  @media screen and (min-width: 480px) {
-    min-width: 480px;
-  }
   @media screen and (min-width: 1280px) {
     padding: 0px;
     background-image: none;
@@ -113,7 +104,7 @@
   font-style: 400;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
@@ -133,25 +124,6 @@
   @extend %text-throw;
   margin-bottom: 44px;
 }
-.menu-services-prise {
-  @media screen and (max-width: 479px) {
-    max-width: 315px;
-    justify-content: unset;
-  }
-  @media screen and (min-width: 480px) {
-    min-width: 418px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  @media screen and (min-width: 1280px) {
-    min-width: 418px;
-    display: block;
-    align-items: unset;
-    justify-content: unset;
-  }
-}
-
 .item-prise {
   display: flex;
   font-family: Open Sans;
@@ -165,6 +137,9 @@
   margin-bottom: 20px;
   margin-left: 0px;
   align-items: baseline;
+  @media screen and (max-width: 390px) {
+    font-size: 10px;
+  }
   @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: 1.66;
@@ -209,7 +184,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.09em;
   color: #ffffff;
   transition: 0.3s ease-in;
